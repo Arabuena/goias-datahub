@@ -4,6 +4,9 @@
 //
 // Cada URL é tratada como configuração: altere aqui, não nos componentes.
 
+const ARAH_API_BASE = 'https://desktop-avf9fhc.tail4e8a8a.ts.net';
+const ARAH_EMBED_URL = `https://arah-ia.vercel.app/preview?api=${encodeURIComponent(ARAH_API_BASE)}`;
+
 export const APPLICATIONS = [
   {
     id: 'xadrez-politico',
@@ -41,8 +44,8 @@ export const APPLICATIONS = [
     short: 'Assistente de inteligência artificial',
     description:
       'Assistente de inteligência artificial. A disponibilidade do serviço pode depender de um backend/modelo externo ativo e é verificada pelo portal.',
-    url: 'https://arah-ia.vercel.app/preview',
-    fallbackUrl: 'https://arah-ia.vercel.app/preview',
+    url: ARAH_EMBED_URL,
+    fallbackUrl: ARAH_EMBED_URL,
     icon: 'bot',
     color: 'violet',
     category: 'Inteligência artificial',
